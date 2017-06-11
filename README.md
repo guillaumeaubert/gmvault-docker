@@ -105,11 +105,11 @@ The container is configurable through the following environment variables:
 Thanks
 ------
 
-* Thank you [https://github.com/gaubert](Guillaume Aubert) for developing
-[https://github.com/gaubert/gmvault](Gmvault)!
+* Thank you [Guillaume Aubert](https://github.com/gaubert) for developing
+[Gmvault](https://github.com/gaubert/gmvault)!
 
-* Thank you [https://github.com/jdhorne](Jason Horne) for publishing
-[https://github.com/jdhorne/gmvault-docker](jdhorne/gmvault-docker)! I learned
+* Thank you [Jason Horne](https://github.com/jdhorne) for publishing
+[jdhorne/gmvault-docker](https://github.com/jdhorne/gmvault-docker)! I learned
 a lot from your architecture before building my own image.
 
 
