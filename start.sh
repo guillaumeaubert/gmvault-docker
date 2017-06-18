@@ -35,7 +35,7 @@ echo "Using user ID $(id -u gmvault)."
 chown -R gmvault:gmvault /data
 
 # Set up crontab.
-touch $CRONTAB
+echo "" > $CRONTAB
 echo "${GMVAULT_FULL_SYNC_SCHEDULE} /app/backup_full.sh" >> $CRONTAB
 echo "${GMVAULT_QUICK_SYNC_SCHEDULE} /app/backup_quick.sh" >> $CRONTAB
 
