@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Starting quick sync of $GMVAULT_EMAIL_ADDRESS."
+echo "Starting full sync of $GMVAULT_EMAIL_ADDRESS."
 echo "Report will be sent to $GMVAULT_SEND_REPORTS_TO."
 
 gmvault sync -d /data $GMVAULT_OPTIONS $GMVAULT_EMAIL_ADDRESS 2>&1 \
