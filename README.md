@@ -106,7 +106,7 @@ The container is configurable through the following environment variables:
 	Timezone; defaults to America/Los_Angeles.
 
 * **`GMVAULT_OPTIONS`** *(optional)*  
-	Additional options to pass to gmvault (such as `--c no`).
+	Additional options to pass to gmvault (such as `-c no`).
 
 * **`GMVAULT_QUICK_SYNC_SCHEDULE`** *(optional)*  
 	Custom quick sync schedule; defaults to daily.
