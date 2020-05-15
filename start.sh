@@ -7,7 +7,7 @@ if [ "$GMVAULT_OPTIONS" != "" ]; then
 fi
 
 # Ensure there's an address to send reports to.
-GMVAULT_SEND_REPORTS_TO=${GMVAULT_SEND_REPORTS_TO:="$GMVAULT_EMAIL_ADDRESS"}
+export GMVAULT_SEND_REPORTS_TO=${GMVAULT_SEND_REPORTS_TO:="$GMVAULT_EMAIL_ADDRESS"}
 echo "Sending email reports to $GMVAULT_SEND_REPORTS_TO."
 
 # Adjust timezone.
