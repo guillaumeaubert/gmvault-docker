@@ -36,6 +36,9 @@ RUN apk add --update \
 		-G "gmvault" \
 		gmvault
 
+# Monkey-patch to support large mailboxes.
+RUN sed -i '/^import imaplib/a imaplib._MAXLINE = 10000000' $(find / -name 'imapclient.py')
+
 # Copy cron jobs.
 COPY backup_quick.sh /app/
 COPY backup_full.sh /app/
