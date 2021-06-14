@@ -54,8 +54,8 @@ create a new client ID and secret.
 	3. The last command to run from that list is
 	`gmvault check --renew-oauth2-tok ${GMVAULT_EMAIL_ADDRESS}`. You will need to
 	start the container again there.
-	5. To test that GMVault is properly set up, you can run a quick sync with
-	`/app/backup_quick.sh`.
+5. To test that GMVault is properly set up, you can run a quick sync with
+`/app/backup_quick.sh`.
 
 
 Volumes
