@@ -63,11 +63,6 @@ echo "#   OAUTH SETUP REQUIRED!   #"
 echo "#############################"
 echo ""
 echo "No Gmail OAuth token found at $OAUTH_TOKEN."
-echo "Please set it up with the following instructions:"
-echo "  1/ Attach a terminal to your container."
-echo "  2/ Run this command:"
-echo "     su -c 'gmvault sync -d /data $GMVAULT_EMAIL_ADDRESS' gmvault"
-echo "  3/ Go to the URL indicated, and copy the token back."
-echo "  4/ Once the synchronization process starts, restart the container."
+echo "Please set it up with the instructions at https://github.com/guillaumeaubert/gmvault-docker#running-this-container-for-the-first-time."
 
 /bin/bash

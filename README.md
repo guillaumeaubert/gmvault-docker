@@ -32,14 +32,30 @@ docker run \
 Running this container for the first time
 -----------------------------------------
 
-Gmvault requires authenticated access to the account you want to back up. To
-that effect, you will need to go through the following set up the first time
+Gmvault requires authenticated access to the account you want to back up. Due
+to Google's new security requirements in order to get access to email data,
+you will need to go through the following set up the first time
 you run this container:
 
 1. Attach a terminal to your container.
-2. Run this command: `su -c 'gmvault sync -d /data ${GMVAULT_EMAIL_ADDRESS}' gmvault`
-3. Go to the URL indicated, and copy the token back.
-4. Once the synchronization process starts, restart the container.
+2. Run this command: `gmvault check ${GMVAULT_EMAIL_ADDRESS}`, but do not hit
+ENTER at the prompt, instead hit Ctrl+C. This step will create the
+`gmvault_defaults.conf` in your data directory, but you will need to create a
+custom Google application before you can get an OAuth token.
+3. Shut down the container.
+4. Follow the instructions
+[here](https://github.com/gaubert/gmvault/issues/335#issuecomment-846483036) to
+create a new client ID and secret.
+	1. You don't have to do this step with the account you're backing up
+	necessarily - as long as you add all the accounts you want to back up as test
+	users, this should work correctly.
+	2. Note the importance of updating `conf_version` depending on the version of
+	GMVault that you are running.
+	3. The last command to run from that list is
+	`gmvault check --renew-oauth2-tok ${GMVAULT_EMAIL_ADDRESS}`. You will need to
+	start the container again there.
+	5. To test that GMVault is properly set up, you can run a quick sync with
+	`/app/backup_quick.sh`.
 
 
 Volumes
