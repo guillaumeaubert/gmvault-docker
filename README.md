@@ -133,7 +133,7 @@ a lot from your architecture before building my own image.
 Copyright
 ---------
 
-Copyright (C) 2017 Guillaume Aubert.
+Copyright (C) 2017-2021 Guillaume Aubert.
 
 
 License
