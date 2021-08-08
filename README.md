@@ -118,6 +118,9 @@ The container is configurable through the following environment variables:
 	Set to `yes` to trigger a sync when the container starts, in addition to the
 	normal cron schedule.
 
+* **`GMVAULT_EMAIL_REPORT`** *(optional)*
+	Set to `no` to not send email reports.
+
 
 Thanks
 ------
