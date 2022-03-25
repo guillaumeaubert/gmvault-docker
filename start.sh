@@ -33,6 +33,9 @@ echo "Using user ID $(id -u gmvault)."
 # Make sure the files are owned by the user executing Gmvault, as we will need
 # to add/delete files.
 chown -R gmvault:gmvault /data
+if [ "$GMVAULT_DIR" != "/data" ]; then
+	chown -R gmvault:gmvault $GMVAULT_DIR
+fi
 
 # Set up crontab.
 echo "" > $CRONTAB
