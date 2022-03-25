@@ -1,6 +1,6 @@
 #!/bin/bash
 
-OAUTH_TOKEN="/data/${GMVAULT_EMAIL_ADDRESS}.oauth2"
+OAUTH_TOKEN="$GMVAULT_DIR/${GMVAULT_EMAIL_ADDRESS}.oauth2"
 
 if [ "$GMVAULT_OPTIONS" != "" ]; then
 	echo "Gmvault will run with the following additional options: $GMVAULT_OPTIONS."
