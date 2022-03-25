@@ -77,6 +77,7 @@ properly:
 	hostname=smtp.gmail.com:587
 	UseSTARTTLS=YES
 	FromLineOverride=YES
+	UseTLS=Yes
 
 	# Gmail account.
 	root=mygmailaddress@gmail.com
